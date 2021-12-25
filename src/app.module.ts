@@ -6,6 +6,7 @@ import { AuthModule } from './auth/auth.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { UserModel } from './user/user.model';
 import { MapModule } from './map/map.module';
+import { WmsModule } from './wms/wms.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { MapModule } from './map/map.module';
     UserModule,
     AuthModule,
     MapModule,
+    WmsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
